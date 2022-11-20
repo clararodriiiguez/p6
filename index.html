@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=League+Spartan&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --gris: #908D8D
+            --azul: #2E3682;
+            --negro: #100F0F;
+            --pistacho: #B8996C;
+            --verde: #57CB10;
+            --cielo: #A5CEEC;
+            --autor: 'Montserrat', sans-serif;
+            --titulo_descripcion: 'Montserrat', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            padding: 2em 0;
+            font-family: var(--autor);
+            color: var(--azul);
+            font-weight: 400;
+            font-size: 0.6em;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+        h2,g{
+            padding: 0.2em 0;
+            font-family: var(--titulo_descripcion);
+            font-size: 1.2em;
+            font-weight: 700;
+            color: var(--negro);
+        }
+        h2{
+            padding: 0.2em 0;
+            color: var(--pistacho);
+            font-size: 1.2em;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        g{
+            color: var(--negro);
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+        .gallery{
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            transition: flex-grow 1s;
+            border-radius: 0.3em;
+            flex-basis: 30%;
+            border: 0.2em solid var(--gris);
+            background: #A5CEEC;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:nth-child(1) img{
+        flex-grow: 1;
+        object-position: top;
+         }
+        .card:hover{
+        flex-grow: 1;
+        box-shadow: 0.1em 0.1em 0.5em var(--gris);
+        }
+        .card_img{
+        width: 100%;
+        height: 270px;
+        }
+        .card_img img{
+        object-fit: cover;
+        height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main.png" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Edward Molyneux</h1>
+                    <h2>Evening dress</h2>
+                    <g>The fl∫apper dresses of the 1920s coexisted in couture and ready-to-wear, the latter often gaudy, the former continuing the linear interests of high-style dress of the 1910s. Molyneux was a designer of consummate good taste, walking a fine line between the refinements of couture style and a modernist aesthetic and the ambition to be socially and culturally advanced in the age of Anita Loos and Gatsby. Sequins in vertical stripes are overlaid with loose lengths of georgette picoted along the edges for a delicate shimmer on vertical filaments.</g>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image.jpeg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Félix-Jacques-Antoine Moulin</h1>
+                    <h2>Two Standing Female Nudes</h2>
+                    <g>Although Moulin was sentenced in 1851 to a month in jail for producing images that, according to court papers, were "so obscene that even to pronounce the titles . . . would be to commit an indecency," this daguerreotype seems more allied to art than to erotica. Instead of the boudoir props and provocative poses typical of hand-colored pornographic daguerreotypes, Moulin depicted these two young women utterly at ease, as unselfconscious in their nudity as Botticelli’s Venus.</g>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image (1).jpeg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Nepal, Kathmandu Valley</h1>
+                    <h2>Goddess of Dance (Nrtyadevi)</h2>
+                    <g>Polychromed wood sculpture from at least the tenth century survives in Nepal, in the form of both independent sculptures and architectural elements. This dancer, likely one of a pair, is a form of a Buddhist savior, a counterpart to such popular bodhisattvas as Avalokiteshvara in the form of Cintamani Lokeshvara, the wish-fulfilling jewel bearer. This goddess gestures with her lower hand, evoking her boon-granting power.</g>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image (2).jpeg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Titian (Tiziano Vecellio)</h1>
+                    <h2>Venus and Adonis</h2>
+                    <g>Tales from Ovid’s Metamorphoses inspired Titian to paint what he called poesie, or poetry in paint. Here, Venus tries to stop her lover from departing for the hunt, fearing—correctly—that he would be killed. The mood of sensuality, conveyed by the beautiful depiction of Venus, seen from the back, enhances the viewer’s sense of the tragic end to this story, expressed through their exchanged glances and the frightened Cupid. Titian’s workshop made multiple versions of this composition, but this one is of exceptional quality and was painted by Titian himself.</g>
+                </header>
+            </div>
+            <div class="card">
+            <figure class="card_img">
+                <img src="img/main-image (3).jpeg" alt="">
+            </figure>
+                <header class="card_text">
+                    <h1>Greek, Attic</h1>
+                    <h2>Terracotta funerary plaque</h2>
+                    <g>In the latter sixth century B.C., the elaborate series of funerary plaques set into the walls of rectangular tombs were replaced by single plaques with holes for attachment. The chariot race, a recurring theme in Attic funerary art, may evoke the funeral games held in honor of legendary heroes, such as those in book 23 of the Iliad, when Achilles honored his deceased friend Patroklos.</g>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image (4).jpeg" alt="">
+                </figure>
+                    <header class="card_text">
+                        <h1>British</h1>
+                        <h2>Dress</h2>
+                        <g>By 1866 fashion had decreed that the fullness of the skirt hsould be gathered up somewhat at the back, and that an overskirt should be added to the full skirt. In 1868 the great expanse of the skirt narrowed considerably at the side, giving a much straighter silhouette in front; the fullness now moved to center back, where the primary shaping was provided by the bustle.</g>
+                    </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
